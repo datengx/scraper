@@ -75,12 +75,12 @@ class MyConfigParser(ConfigParser):
 
         return data_folder
 
-    def get_URL_file(self):
-        URL_file = ""
+    def get_url_file(self):
+        url_file = ""
 
         try:
-            URL_file = self.get("Setup", "URL_list_file")
+            url_file = self.get("Setup", "URL_list_file")
         except configparser.NoOptionError:
             print("Error: parsing the URL list file")
 
-        return URL_file
+        return url_file
